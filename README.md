@@ -3,5 +3,5 @@
 # why not!!!!?
 aaaaaaaaa  
 also here's some info for executing the commands:  
-run `node idiot.js` for idiot.js file  
+run `node main.mjs` for main.mjs file  
 use vscode's live server extension for bad_html.html or go to https://hueychen27.github.io/Useful_Code/bad_html.html
