@@ -1,13 +1,13 @@
 <head>
     <title>cats</title>
-    <link rel="icon" type="image/jpg"
-        href="https://img.freepik.com/free-photo/red-white-cat-i-white-studio_155003-13189.jpg?w=740&t=st=1687465759~exp=1687466359~hmac=cbbf0a22e9a45e67592964eba6d825f004b3700274d6df249db525a33f42beef">
+    <link rel="icon" type="image/jpg" href="https://img.freepik.com/free-photo/red-white-cat-i-white-studio_155003-13189.jpg?w=740&t=st=1687465759~exp=1687466359~hmac=cbbf0a22e9a45e67592964eba6d825f004b3700274d6df249db525a33f42beef">
     <style>
         body {
             position: relative;
             background-image: url("https://img.freepik.com/free-photo/red-white-cat-i-white-studio_155003-13189.jpg?w=740&t=st=1687465759~exp=1687466359~hmac=cbbf0a22e9a45e67592964eba6d825f004b3700274d6df249db525a33f42beef");
-            width: 2000px;
+            width: max-content;
             font-size: large;
+            margin: 0;
         }
 
         * {
@@ -37,8 +37,40 @@
             content-visibility: visible;
         }
 
+        p.show {
+            position: fixed;
+            font-size: 100px;
+            margin: 0;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
         .hide {
             content-visibility: hidden;
+        }
+
+        a {
+            position: relative;
+        }
+
+        a:after {
+            font-size: small;
+            display: inline-block;
+            content: attr(data-tooltip);
+            position: absolute;
+            top: -20px;
+            left: 10px;
+            background: black;
+            color: white;
+            padding: 2px;
+            border: 1px solid #eee;
+            opacity: 0;
+            transition: 0.5s opacity;
+        }
+
+        a:hover:after {
+            opacity: 1;
         }
     </style>
     <script src="main.mjs" type="module" defer></script>
@@ -46,24 +78,21 @@
 </head>
 
 <body>
-    <h1 style="font-size: 400px">really bad aughhh</h1>
-    <marquee direction="right" behavior="alternate">aaaaaaaaaaaaaaa</marquee>
+    <h1 style="font-size: 400px">really<br>bad<br>aughhh</h1>
+    <marquee direction="right" behavior="alternate" style="background-color: red; width: 100%; display: inline-block; margin: 0;" scrollamount="40">Breaking news: aaaaaaaaaaaaaaa</marquee>
     <nobr>eeeeeeeeeeeeeeee eeeeeeeeeeeeeee eeeeeeeeeeeeeeeeeeeeeeee this won't word
         breakddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
     </nobr>
     <div>
-        <div style="position: -webkit-sticky; position: sticky; top: 0; left: 0; font-size: 100px; width: max-content;"
-            class="blink">
+        <div style="position: -webkit-sticky; position: sticky; top: 0; left: 0; font-size: 100px; width: max-content;" class="blink">
             scroll to ur right -------&gt;
         </div>
-        <image
-            src="https://img.freepik.com/free-photo/red-white-cat-i-white-studio_155003-13189.jpg?w=740&t=st=1687465759~exp=1687466359~hmac=cbbf0a22e9a45e67592964eba6d825f004b3700274d6df249db525a33f42beef"
-            alt="cat" title="cattoooooooo"></image>
+        <image src="https://img.freepik.com/free-photo/red-white-cat-i-white-studio_155003-13189.jpg?w=740&t=st=1687465759~exp=1687466359~hmac=cbbf0a22e9a45e67592964eba6d825f004b3700274d6df249db525a33f42beef" alt="cat" title="cattoooooooo"></image>
         <p>this <strike>goof</strike> gud code</p>gahahahahahaha<div>
             <div></div>
         </div>
-        <div title="i know right">yay bad html rule!!!!!1111111111 (hover over this message)</div>
-        <center>
+        <div title="i know right" style="cursor: nesw-resize">yay bad html rule!!!!!1111111111 (hover over this message)</div>
+        <center style="background-color: burlywood; width: 100vw;">
             <dir>
                 <menuitem>i use dir element hahhaha</menuitem><br>
                 <menuitem>
@@ -72,7 +101,7 @@
             </dir>
             <xmp>xmp element moment</xmp>
         </center>
-        <acronym title="Meaning: fat">yo mama</acronym>
+        <acronym title="Meaning: fat" style="cursor: help">yo mama</acronym>
         <ruby>
             <rb>冰</rb>
             <rb>淇</rb>
@@ -83,26 +112,40 @@
             <rt>ling</rt>
             <rp>)</rp>
         </ruby>
-        <a href="#secret">click here!!!!!1111</a>
+        <a href="#secret" data-tooltip="yes click here!!!1" style="display: inline-block;">click here!!!!!1111</a>
     </div>
+    <form>
+        <label for="yay">
+            get brain cels!!!111
+            <input name="yay" id="yay" type="checkbox">
+        </label>
+        <button type="reset" id="redirBtn" onclick="window.open('https:\/\/www.youtube.com/watch?v=xvFZjo5PgG0','popUpWindow','height=800,width=1200,left=10,top=10,,scrollbars=yes,menubar=no'); return false;">submitt</button>
+    </form>
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     <font color="red" id="secret">
         <button class="toggle">clicky</button>
-        <p class="hide">never
-            gonna give you up</p>
+        <p class="hide">
+            <nobr>never
+                gonna give you up</nobr>
+        </p>
     </font>
     <script>
         const handleClick = (event) => {
             const button = event.target;
             const el = button.nextElementSibling;
             button.textContent = el.classList.contains("show") ? "clicky" : "please don't hide";
+            if (el.classList.contains("hide")) {
+                const secret = new Audio("https://soundspunos.com/uploads/files/2022-05/1651865356_1651485334_rick-astley-never-gonna-give-you-up.mp3");
+                secret.loop = true;
+                secret.play();
+            }
+            button.remove();
             el.classList.toggle("hide");
             el.classList.toggle("show");
         };
 
         document.querySelectorAll("button.toggle").forEach((button) => {
             button.addEventListener("click", handleClick);
-        });
-
+        }); 
     </script>
 </body>
